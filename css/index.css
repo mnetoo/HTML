@@ -27,6 +27,7 @@ nav div {
     display: flex;
     gap: 30px;
     justify-content: right;
+    margin-right: 35px;
 }
 
 nav a {
@@ -38,4 +39,38 @@ nav a {
 
 nav a:hover {
     transform: translateY(-5px);
+}
+
+.central {
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+}
+
+.quadroBranco {
+    font-size: 15px;
+    row-gap: 15px;
+    text-align: center;
+    background-color: black;
+    border-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.8s ease, background-color 0.9s ease;
+}
+
+.quadroBranco:hover {
+    color: white;
+    transform: translateY(-10px);
+}
+
+.aumentar {
+    transform: scale(1.06); 
+}
+
+footer {
+    color: white;
+    text-align: center; 
+    padding: 10px 0;
 }

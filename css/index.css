@@ -60,15 +60,6 @@ nav a:hover {
     transition: transform 0.8s ease, background-color 0.9s ease;
 }
 
-.quadroBranco:hover {
-    color: white;
-    transform: translateY(-10px);
-}
-
-.aumentar {
-    transform: scale(1.06); 
-}
-
 footer {
     color: white;
     text-align: center; 

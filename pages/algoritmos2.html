@@ -16,7 +16,8 @@
 
     <p><strong>Trabalho Prático de Ordenação e Pesquisa</strong></p>
     <p>Disciplina CI1056 - Algoritmos e Estruturas de Dados II</p>
-    <p>2º Período de BCC & IBM - <a href="https://www.inf.ufpr.br/elias/algoritmos/index.html">Prof. Elias P. Duarte Jr.</a></p>
+    <p>2º Período de BCC & IBM - <a href="https://www.inf.ufpr.br/elias/algoritmos/index.html">Prof. Elias P. Duarte
+            Jr.</a></p>
 
 </header>
 
@@ -45,25 +46,210 @@
             <h5>- Arquivo Header - <a href="../files/funções.h.txt" target="_blank">funções.h</a></h5>
             <p>
                 O arquivo de cabeçalho foi criado para conter os protótipos das funções que foram implementadas no
-                arquivo de código-fonte "funções.c". Isso permite que outros arquivos possam chamar essas funções sem precisar conhecer 
+                arquivo de código-fonte "funções.c". Isso permite que outros arquivos possam chamar essas funções sem
+                precisar conhecer
                 os detalhes de sua implementação.
             </p>
 
             <h5>- Source Code - <a href="../files/funções.c.txt" target="_blank">funções.c</a></h5>
             <p>
-                O arquivo "funções.c" contém a implementação de cada função que foi prototipada anteriormente no arquivo de cabeçalho "funções.h". 
-                Isso permite que outros arquivos possam chamar essas funções sem precisar conhecer os detalhes de sua implementação.
+                O arquivo "funções.c" contém a implementação de cada função que foi prototipada anteriormente no arquivo
+                de cabeçalho "funções.h".
+                Isso permite que outros arquivos possam chamar essas funções sem precisar conhecer os detalhes de sua
+                implementação.
             </p>
 
             <h5>- Main - <a href="../files/programa.c.txt" target="_blank">programa.c</a></h5>
             <p>
-                O arquivo programa.c contém a função main do trabalho prático e é o ponto central de execução do código. 
-                É nele que todo o fluxo do programa é controlado, incluindo a interação com os Tipos Abstratos de Dados (TADs) 
-                e a coordenação de todas as operações principais, como a leitura dos dados, o processamento e a geração de resultados.
+                O arquivo programa.c contém a função main do trabalho prático e é o ponto central de execução do código.
+                É nele que todo o fluxo do programa é controlado, incluindo a interação com os Tipos Abstratos de Dados
+                (TADs)
+                e a coordenação de todas as operações principais, como a leitura dos dados, o processamento e a geração
+                de resultados.
             </p>
+            <hr>
 
 
         </section>
+
+
+        <h3>Algoritmos de Ordenação</h3>
+
+        <section class="ordenacao">
+            <h5>- Quick Sort (Pivô Último Elemento) - <a href="../files/quickUltimo.c.txt" target="_blank">quickSortUltimo.c</a></h5>
+            <p>
+                O último elemento do vetor é escolhido como o pivô, que será utilizado como referência para
+                particionar o vetor em duas partes: uma com elementos menores ou iguais ao pivô e outra com elementos
+                maiores.
+                Escolher o último elemento como pivô simplifica o código, evitando a necessidade de lógica adicional
+                para calcular o pivô.
+            </p>
+            <p>
+                A escolha do último elemento como pivô no Quick Sort é uma estratégia válida e conveniente para
+                implementações simples.
+                Contudo, em casos onde a entrada é ordenada ou quase ordenada, essa escolha pode prejudicar o desempenho
+                do algoritmo,
+                tornando necessário considerar alternativas.
+            </p>
+            <hr>
+        </section>
+        
+
+
+        <section class="ordenacao">
+            <h5>- Quick Sort (Mediana de Três) - <a href="../files/quickMediana.c.txt" target="_blank">quickSortMediana.c</a></h5>
+            <p>
+                A estratégia da Mediana de Três (ou "Median of Three") no Quick Sort é uma técnica que ajuda a melhorar
+                o desempenho
+                ao escolher um pivô mais adequado, especialmente quando o vetor de entrada já está ordenado ou quase
+                ordenado.
+                Essa estratégia reduz a probabilidade de pior caso, no qual o algoritmo Quick Sort pode se degradar para
+                O(n2)O(n2).
+            </p>
+            <p>
+                Na escolha do pivô pela Mediana de Três, em vez de escolher o primeiro, o último ou o meio do vetor como
+                pivô,
+                o Quick Sort compara três elementos específicos e escolhe a mediana entre eles. Geralmente, os três
+                elementos escolhidos são:
+                <ul>
+                    <li>
+                        Primeiro elemento do vetor.
+                    </li>
+                    <li>
+                        Elemento central do vetor.
+                    </li>
+                    <li>
+                        Último elemento do vetor.
+                    </li>
+                </ul>
+                A mediana desses três valores é então usada como o pivô. Para obter a mediana, o algoritmo apenas precisa
+                ordenar esses três valores em relação ao seu tamanho. O valor intermediário é o que será usado como pivô.
+            </p>
+            <hr>
+        </section>
+
+
+
+        <section class="ordenacao">
+            <h5>- Shell Sort (Sequência de Knuth) - <a href="../files/knuth.c.txt" target="_blank">knuth.c</a></h5>
+            <p>
+                O espaçamento de Knuth é uma sequência específica de espaçamentos utilizada no algoritmo Shell Sort 
+                que visa melhorar a eficiência do algoritmo ao longo do processo de ordenação. A sequência de Knuth, também 
+                chamada de sequência de Knuth Gap, foi desenvolvida por Donald Knuth e é uma das sequências mais conhecidas e 
+                eficazes para o Shell Sort.
+            </p>
+            <p>
+                A sequência de espaçamentos de Knuth é gerada pela fórmula: h=3h+1 <br>
+                onde hh representa o espaçamento (ou intervalo) usado em cada etapa de ordenação do Shell Sort. 
+                Essa sequência é utilizada até que h seja maior do que o tamanho do vetor a ser ordenado. 
+                Em termos práticos, a sequência geralmente começa com (h = 1) e é expandida enquanto (h < n/3) onde n é o número de elementos no vetor.
+            </p>
+            <hr>
+        </section>
+    
+
+
+        <section class="ordenacao">
+            <h5>- Shell Sort (Sequência de Hibbard) - <a href="../files/hibbard.c.txt" target="_blank">hibbard.c</a></h5>
+            <p>
+                O espaçamento de Hibbard é uma sequência de espaçamentos usada no algoritmo Shell Sort que visa melhorar 
+                a eficiência do processo de ordenação. Desenvolvida por Thomas Hibbard, essa sequência é frequentemente usada 
+                por ser mais eficaz do que os espaçamentos mais simples, como n/2,n/4,…n/2,n/4,…, e também é relativamente fácil de implementar.
+            </p>
+            <p>
+                A sequência de Hibbard é gerada pela fórmula: (h = 2^k - 1) <br>
+                onde k é um número inteiro positivo. Isso cria uma 
+                sequência de espaçamentos que começa com 1 e cresce como 1,3,7,15,31,…, continuando até que o 
+                espaçamento seja maior ou igual ao tamanho do vetor.
+            </p>
+            <hr>
+        </section>
+        
+
+
+        <section class="ordenacao">
+            <h5>- Selection Sort (Algoritmo Quadrático) - <a href="../files/selection.c.txt" target="_blank">selection.c</a></h5>
+            <p>
+                O Selection Sort é um algoritmo de ordenação simples e intuitivo, que organiza uma lista de elementos encontrando 
+                repetidamente o menor (ou maior) elemento do conjunto não ordenado e colocando-o em sua posição correta na lista. 
+                Ele é frequentemente usado para aprendizado por sua simplicidade, mas geralmente não é adequado para grandes listas 
+                devido ao seu desempenho ineficiente em termos de tempo.
+            </p>
+            <p>
+                Seu funcionamento ocorre da seguinte forma:
+                <ul>
+                    <li>
+                        <strong>Dividir em Partes Ordenada e Não Ordenada:</strong>
+                        O algoritmo mantém duas partes na lista: a parte ordenada, no início, e a parte não ordenada, 
+                        que começa depois da parte ordenada.
+                    </li>
+                    <li>
+                        <strong>Encontrar o Menor Elemento:</strong>
+                        Em cada iteração, o Selection Sort percorre a parte não ordenada da lista, 
+                        encontra o menor elemento e o coloca no final da parte ordenada.
+                    </li>
+                    <li>
+                        <strong>Repetição:</strong>
+                        A cada passagem, o menor elemento é posicionado no próximo índice da parte ordenada. 
+                        Esse processo continua até que toda a lista esteja ordenada.
+                    </li>
+                </ul>
+            </p>
+            <hr>
+    </section>
+
+
+
+    <h3>Algoritmos de Busca</h3>
+
+    <section class="busca">
+        <h5>- Busca Sequencial - <a href="../files/sequencial.c.txt" target="_blank">sequencial.c</a></h5>
+        <p>
+            A busca sequencial, também chamada de pesquisa sequencial, é um algoritmo simples de busca que percorre uma 
+            lista ou vetor de elementos um por um até encontrar o elemento desejado ou até que todos os elementos tenham 
+            sido verificados. É um dos métodos de busca mais básicos e é amplamente utilizado para listas pequenas ou quando a lista não está ordenada.
+        </p>
+        <p>
+            A busca sequencial possue desempenho ineficiente para listas grandes. O desempenho de O(n) torna a 
+            busca sequencial mais lenta comparada a algoritmos como a busca binária, que possui complexidade O(log n). Não aproveita dados ordenados, 
+            a busca sequencial não se beneficia de listas ordenadas, então verifica todos os elementos independentemente da posição do alvo.
+        </p>
+        <hr>
+    </section>
+
+
+
+    <section class="busca">
+        <h5>- Busca Binária - <a href="../files/binaria.c.txt" target="_blank">binária.c</a></h5>
+        <p>
+            A pesquisa binária é um algoritmo eficiente para encontrar um elemento em uma lista ordenada. 
+            Ao contrário da busca sequencial, que verifica cada elemento um por um, a busca binária reduz 
+            o espaço de busca pela metade a cada comparação, resultando em um desempenho muito mais rápido para listas grandes. 
+            A pesquisa binária requer que a lista esteja ordenada em ordem crescente ou decrescente antes de ser executada.
+        </p>
+        <p>
+            Seu funcionamento ocorre da seguinte forma:
+                <ul>
+                    <li>
+                        <strong>Divisão em Metades:</strong>
+                        O algoritmo começa com o elemento do meio da lista. Se o elemento desejado é igual ao elemento do meio, a busca termina.
+                    </li>
+                    <li>
+                        <strong>Comparação com o Meio:</strong>
+                        Se o elemento desejado for menor que o elemento do meio, a busca continua apenas na metade esquerda da lista.
+                    </li>
+                    <li>
+                        <strong>Repetição:</strong>
+                        Esse processo de divisão continua, reduzindo a metade do espaço de busca a cada passo, até encontrar o elemento 
+                        desejado ou até que o espaço de busca se reduza a zero (caso em que o elemento não está presente na lista).
+                    </li>
+                </ul>
+        </p>
+        <hr>
+    </section>
+
+
+
 
     </main>
 

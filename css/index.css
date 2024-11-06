@@ -12,6 +12,13 @@ html {
 
 }
 
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9)), url('../img/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .fade-in {
     opacity: 0;              
     transform: translateY(10px); 
@@ -124,8 +131,10 @@ main {
 button {
     border: none;
     padding: 5px;
+    background-color: rgba(0, 0, 0, 0); /* Fundo com 50% de transparência */
+    border: none;
+    color: black; 
     cursor: pointer;
-    background-color: white;
 }
 
 button a {

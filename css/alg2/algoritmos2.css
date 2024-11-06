@@ -1,3 +1,12 @@
+/*BARRA LATERAL MENOR*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightgray;
+}
+
 html {
     text-align: center;
 
@@ -99,46 +108,40 @@ main {
     margin: 0;
 }
 
-.cursadas {
+
+
+
+
+
+.analise {
     grid-column-start: 2;
+    display: grid;
+    grid-template-columns: 1fr;
     column-gap: 10px;
-    font-size: 15px;
+    align-items: center;
+    row-gap: 10px;
 }
 
-.atividades {
+.analise div {
     grid-column-start: 2;
-    column-gap: 10px;
-    font-size: 15px;
+    align-items: center;
 }
 
-.cursadas a {
-    text-decoration: none;
-    color: black;
-}
-
-.atividades a {
-    text-decoration: none;
-    color: black;
-}
-
-
-
-
-.conhecimentos {
+.analise div a{
     grid-column-start: 2;
-    column-gap: 10px;
-    font-size: 15px;
-}
-
-.conhecimentos a {
     text-decoration: none;
     color: black;
+    text-align: center;
+    margin: 0;
 }
 
-.conhecimentos a {
-    text-decoration: none;
-    color: black;
+.analise div p {
+    grid-column-start: 2;
+    text-align: center;
+    margin: 0;
 }
+
+
 
 
 

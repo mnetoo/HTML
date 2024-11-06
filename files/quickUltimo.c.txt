@@ -1,0 +1,48 @@
+//                                UTILIZANDO O ÚLTIMO ELEMENTO DO VETOR COMO PIVÔ
+
+
+
+// Função que particiona o vetor de forma que os elementos menores que o pivô fiquem à esquerda e os maiores à direita do pivô. 
+// O último elemento do vetor é escolhido como pivô.
+int particionarUltimo(int vetor[], int inicio, int fim) 
+{
+    int pivo = vetor[fim];  // último elemento
+    int indiceMenor = inicio - 1;  // Inicializa o índice do menor elemento
+
+    // Percorre o vetor do início até o penúltimo elemento (fim - 1), comparando cada elemento com o pivô
+    for (int i = inicio; i < fim; i++) 
+    {   
+        contagemComparacoes++;  // Conta cada comparação feita entre o elemento e o pivô
+        if (vetor[i] < pivo) {  // Se o elemento é menor que o pivô, ele deve ser movido para a esquerda
+            indiceMenor++;  // Incrementa o índice do menor elemento
+            trocar(&vetor[indiceMenor], &vetor[i]);  // Troca os elementos de posição
+        }
+    }
+
+    // Coloca o pivô na posição correta, entre os elementos menores e maiores
+    trocar(&vetor[indiceMenor + 1], &vetor[fim]);
+    
+    // Retorna o índice da posição final do pivô
+    return indiceMenor + 1;
+}
+
+
+// Função que implementa o algoritmo de ordenação QuickSort utilizando o último elemento como pivô
+void quickSortUltimo(int vetor[], int inicio, int fim) 
+{
+    // A recursão só continua se houver mais de um elemento a ser ordenado
+    if (inicio < fim) {
+        // Particiona o vetor e encontra o índice do pivô
+        int indicePivo = particionarUltimo(vetor, inicio, fim);
+        
+        // Ordena recursivamente os elementos à esquerda do pivô
+        quickSortUltimo(vetor, inicio, indicePivo - 1);
+        
+        // Ordena recursivamente os elementos à direita do pivô
+        quickSortUltimo(vetor, indicePivo + 1, fim);
+    }
+}
+
+
+
+/*===========================================================================================================*/

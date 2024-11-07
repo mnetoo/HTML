@@ -141,21 +141,22 @@
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------- -->
 
         <section class="ordenacao">
-            <h5>- Quick Sort (Pivô Último Elemento) - <a href="../files/quickUltimo.c.txt" target="_blank">quickSortUltimo.c</a></h5>
+            <h5>- Quick Sort (Pivô Elemento Aleatório) - <a href="../files/quickAleatorio.c.txt" target="_blank">quickSortAleatorio.c</a></h5>
             <p>
-                Neste algoritmo, o último elemento do vetor é escolhido como o pivô, que será utilizado como referência para
+                Neste algoritmo, um elemento aleatório do vetor é escolhido como o pivô, que será utilizado como referência para
                 particionar o vetor em duas partes: uma com elementos menores ou iguais ao pivô e outra com elementos maiores.
-                Escolher o último elemento como pivô simplifica o código, evitando a necessidade de lógica adicional para calcular o pivô.
+                Escolher um elemento aleatório do vetor como pivô  ajuda a reduzir a probabilidade de ocorrerem os piores casos de tempo de execução.
             </p>
             <p>
-                A escolha do último elemento como pivô no Quick Sort é uma estratégia válida e simples.
-                Após vários teste, percebi que essa estratégia não é a mais eficiente, pois em vetores ordenados ou quase ordenados
-                o desempenho do algoritmo é prejudicado. 
+                A escolha dessa estrategia nesse algoritmo faz com que No caso médio, essa estratégia mantém o desempenho esperado de O(N logN) 
+                e reduz a chance de de ocorrer O(N^2) que ocorreria se o pivô fosse consistentemente mal escolhido.
+                Após vários teste, percebi que essa estratégia é muito eficiente, pois em vetores ordenados ou quase ordenados
+                o desempenho do algoritmo é aproveitado ao máximo.
             </p>
             <p>
-                Para a implentação, criei a função <b>"particionarUltimo"</b> que utiliza o último elemento como pivô e particiona o vetor.
-                Criei a função <b>"quickSortUltimo"</b> que é a função principal do algoritmo Quick Sort com pivô no último elemento.
-                <em>(Todos os códigos relacionados ao Quick Sort - Último Elemento estão no arquivo quickSortUltimo.c).</em>
+                Para a implentação, criei a função <b>"particionarAleatorio"</b> que utiliza um elemento aleatório como pivô e particiona o vetor.
+                Criei a função <b>"quickSortAleatorio"</b> que é a função principal do algoritmo Quick Sort com pivô aleatório.
+                <em>(Todos os códigos relacionados ao Quick Sort - Pivô Elemento Aleatório estão no arquivo quickSortUltimo.c).</em>
             </p>
             <hr>
         </section>
@@ -307,10 +308,10 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Quick Sort - Último Elemento</td>
-                    <td>11.290.359</td>
-                    <td>11.301,34</td>
-                    <td>661,28</td>
+                    <td>Quick Sort - Elemento Aleatório</td>
+                    <td>11.319.844</td>
+                    <td>11319,84</td>
+                    <td>665,16</td>
                 </tr>
 
                 <tr>
@@ -367,22 +368,32 @@
     <section class="analise">
         <h5>Análise - Ordenação</h5>
         <p>
-            Analisando os dados, podemos concluir qual o melhor e também o pior algoritmo de ordenação e qual o melhor e pior algoritmo de busca:<br>
-
-            Podemos facilmente, identificar e afirmar que o Selection Sort é o pior algoritmo de ordenação, pois ele sempre terá o mesmo desempenho.<br>
-
-            O melhor algoritmo de ordenação é o Quick Sort com pivô na Mediana de Três Elementos, pois ele apresenta o menor número de comparações.
+            Analisando os dados, podemos concluir qual o melhor e também o pior algoritmo de ordenação e qual o melhor e pior algoritmo de busca:
+        </p>
+        <p>
+            <strong>O melhor algoritmo de ordenação é o Quick Sort com pivô na Mediana de Três Elementos</strong>, pois ele apresenta o menor número de comparações.
             É um número muito grande de comparações, mas é o menor entre todos os algoritmos.
-            O Quick Sort com pivô no último elemento é o segundo melhor algoritmo de ordenação, mas ainda sim é muito inferior ao Mediana de Três Elementos.
+            <strong>O Quick Sort com pivô sendo um elemento aleatório é o segundo melhor</strong> algoritmo de ordenação, mas ainda sim é inferior ao Mediana de Três Elementos.
+            Possui um número maior de comparações e um desvio padrão maior, o que indica um desempenho menos eficiente e mais variável do que o Quick Sort com Mediana de Três Elementos.
+        </p>
+
+        <p>
+            Os algoritmos do Shell Sort com sequência de Knuth e Hibbard apresentam um número muito maior de comparações do que os Quick Sort. Eles possuem um
+            desvio padrão menor, mas ainda assim são menos eficientes do que o Quick Sort. <strong>O Shell Sort - Sequência de Knuth é um pouco mais eficiente </strong> do que 
+            o Shell Sort - Sequência de Hibbard.
+        </p>
+
+        <p>
+            Podemos facilmente, identificar e afirmar que o <strong>Selection Sort é o pior algoritmo de ordenação</strong>, pois ele sempre terá o mesmo desempenho (quadrático).
         </p>
 
 
         <h5>Análise - Busca</h5>
         <p>
-            Os números mostram que a busca binária é definitivamente o melhor algoritmo de busca, pois apresenta um número muito menor de comparações e um desvio padrão menor,
-            o que indica maior consistência no desempenho. A busca sequencial, tem um número muito maior de comparações e um desvio padrão maior, o que indica
+            Os números mostram que a <strong>busca binária é definitivamente o melhor algoritmo de busca</strong>, pois apresenta um número muito menor de comparações 
+            e um desvio padrão menor, o que indica maior consistência no desempenho. A busca sequencial, tem um número muito maior de comparações e um desvio padrão maior, o que indica
             um desempenho menos eficiente e mais variável.<br>
-            Mesmo estando evidente qual o melhor, vale ressaltar que a busca binária possue a restição de funcionar apenas em vetor ordenado, enquanto a busca sequencial 
+            Mesmo estando evidente qual o melhor, vale ressaltar que a busca binária possue a <em>restrição de funcionar apenas em vetor ordenado</em>, enquanto a busca sequencial 
             funciona em qualquer vetor.
         </p>
 
@@ -391,9 +402,10 @@
         <p>
             Logo, podemos elencar os melhores algoritmos de ordenação e busca:<br>
             <ul>
-                <li><strong>Melhor Algoritmo de Ordenação:</strong> QuickSort (Pivô Mediana de Três).</li>
-                <li><strong>Melhor Algoritmo de Busca (Vetor Ordenado):</strong> Busca Binária.</li>
-                <li><strong>Melhor Algoritmo de Busca (Vetor Genérico):</strong> Busca Sequencial.</li>
+                <li><strong>Melhor Algoritmo de Ordenação:</strong> Quick Sort (Pivô Mediana de Três)</li>
+                <li><strong>Pior Algoritmo de Ordenação:</strong>Selection Sort</li>
+                <li><strong>Melhor Algoritmo de Busca (Vetor Ordenado):</strong> Busca Binária</li>
+                <li><strong>Melhor Algoritmo de Busca (Vetor Genérico):</strong> Busca Sequencial</li>
             </ul>
             Esses resultados indicam que o Quick Sort (Mediana de Três Elementos) e a Busca Binária 
             são as melhores opções para minimizar o número de comparações e manter um desempenho consistente.

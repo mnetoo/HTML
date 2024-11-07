@@ -4,10 +4,9 @@
 
 Selecione a operação desejada:
 
-
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -24,7 +23,7 @@ Digite o tamanho do vetor que deseja visualizar: 10
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatorio
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -42,23 +41,22 @@ Deseja visualizar o vetor gerado? (1. Sim / 2. Não):
 1
 
 Digite o tamanho do vetor que deseja visualizar: 10
-344 1507 1278 1760 316 789 1944 826 1541 91 
+69 967 685 341 1525 1928 1266 1189 2007 1232
 
+Executando QuickSort com Pivô Aleatório...
 
-Executando QuickSort com Pivô Último...
-
-[QuickSort - Pivô Último] Contagem de trocas: 5147
-[QuickSort - Pivô Último] Contagem de comparações: 10754
+[QuickSort - Pivô Aleatório] Contagem de trocas: 6787
+[QuickSort - Pivô Aleatório] Contagem de comparações: 10582
 
 Deseja imprimir o vetor ordenado? (1. Sim / 2. Não):
 1
 
 Digite o tamanho do vetor que deseja visualizar: 10
-0 2 3 8 9 11 11 15 16 18 
+0 8 10 11 12 18 21 22 24 27 
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -72,17 +70,17 @@ Digite a opção desejada: 2
 Gerar Vetor? (1. Sim / 2. Não):
 2
 
-Executando QuickSort com Pivô Último...
+Executando QuickSort com Pivô Aleatório...
 
-[QuickSort - Pivô Último] Contagem de trocas: 10489
-[QuickSort - Pivô Último] Contagem de comparações: 21951
+[QuickSort - Pivô Aleatório] Contagem de trocas: 12487
+[QuickSort - Pivô Aleatório] Contagem de comparações: 21329
 
 Deseja imprimir o vetor ordenado? (1. Sim / 2. Não):
 2
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -115,7 +113,7 @@ Digite o tamanho do vetor que deseja visualizar: 10
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -139,7 +137,7 @@ Deseja imprimir o vetor ordenado? (1. Sim / 2. Não):
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -172,7 +170,7 @@ Digite o tamanho do vetor que deseja visualizar: 10
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -196,7 +194,7 @@ Deseja imprimir o vetor ordenado? (1. Sim / 2. Não):
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -229,7 +227,7 @@ Digite o tamanho do vetor que deseja visualizar: 10
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -253,7 +251,7 @@ Deseja imprimir o vetor ordenado? (1. Sim / 2. Não):
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -286,7 +284,7 @@ Digite o tamanho do vetor que deseja visualizar: 10
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -310,7 +308,7 @@ Deseja imprimir o vetor ordenado? (1. Sim / 2. Não):
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -341,7 +339,7 @@ Elemento 18 não encontrado no vetor após 1024 comparações.
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -371,7 +369,7 @@ Elemento 703 não encontrado no vetor após 1024 comparações.
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -396,7 +394,7 @@ Elemento 18 não encontrado no vetor após 1024 comparações.
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -421,7 +419,7 @@ Elemento 1545 não encontrado no vetor após 1024 comparações.
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -453,7 +451,7 @@ Número de comparações realizadas: 10
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -485,7 +483,7 @@ Número de comparações realizadas: 10
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -511,7 +509,7 @@ Número de comparações realizadas: 10
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -537,7 +535,7 @@ Número de comparações realizadas: 9
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -551,24 +549,24 @@ Digite a opção desejada: 9
 Executando TODOS os algoritmos 1000 vezes...
 Resultados das Comparações após 1000 execuções:
 
-QuickSort (Pivô Último): Média = 11318.16
-QuickSort (Pivô Último): Desvio Padrão = 658.06
-QuickSort (Pivô Último): Total = 11318156
+QuickSort (Pivô Aleatório): Média = 11297.15
+QuickSort (Pivô Aleatório): Desvio Padrão = 681.18
+QuickSort (Pivô Aleatório): Total = 11297148
 ____________________________________________________________________________
 
-QuickSort (Pivô Mediana de Três): Média = 9649.95, 
-QuickSort (Pivô Mediana de Três): Desvio Padrão = 344.28
-QuickSort (Pivô Mediana de Três): Total = 9649953
+QuickSort (Pivô Mediana de Três): Média = 9653.67, 
+QuickSort (Pivô Mediana de Três): Desvio Padrão = 339.55
+QuickSort (Pivô Mediana de Três): Total = 9653675
 ____________________________________________________________________________
 
-ShellSort (Sequência de Knuth): Média = 14172.91
-ShellSort (Sequência de Knuth): Desvio Padrão = 461.24
-ShellSort (Sequência de Knuth): Total = 14172911
+ShellSort (Sequência de Knuth): Média = 14217.78
+ShellSort (Sequência de Knuth): Desvio Padrão = 481.05
+ShellSort (Sequência de Knuth): Total = 14217782
 ____________________________________________________________________________
 
-ShellSort (Sequência de Hibbard): Média = 14963.91
-ShellSort (Sequência de Hibbard): Desvio Padrão = 390.93
-ShellSort (Sequência de Hibbard): Total = 14963911
+ShellSort (Sequência de Hibbard): Média = 14966.87
+ShellSort (Sequência de Hibbard): Desvio Padrão = 382.06
+ShellSort (Sequência de Hibbard): Total = 14966874
 ____________________________________________________________________________
 
 SelectionSort: Média = 523776.00
@@ -576,19 +574,19 @@ SelectionSort: Desvio Padrão = 0.00
 SelectionSort: Total = 523776000
 ____________________________________________________________________________
 
-Busca Sequencial: Média = 798.20
-Busca Sequencial: Desvio Padrão = 334.04
-Busca Sequencial: Total = 798197
+Busca Sequencial: Média = 821.37
+Busca Sequencial: Desvio Padrão = 319.26
+Busca Sequencial: Total = 821367
 ____________________________________________________________________________
 
-Busca Binária: Média = 9.52
-Busca Binária: Desvio Padrão = 1.08
-Busca Binária: Total = 9523
+Busca Binária: Média = 9.54
+Busca Binária: Desvio Padrão = 1.05
+Busca Binária: Total = 9538
 ____________________________________________________________________________
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard
@@ -602,24 +600,24 @@ Digite a opção desejada: 9
 Executando TODOS os algoritmos 1000 vezes...
 Resultados das Comparações após 1000 execuções:
 
-QuickSort (Pivô Último): Média = 11286.05
-QuickSort (Pivô Último): Desvio Padrão = 623.97
-QuickSort (Pivô Último): Total = 11286049
+QuickSort (Pivô Aleatório): Média = 11315.65
+QuickSort (Pivô Aleatório): Desvio Padrão = 661.20
+QuickSort (Pivô Aleatório): Total = 11315653
 ____________________________________________________________________________
 
-QuickSort (Pivô Mediana de Três): Média = 9645.00, 
-QuickSort (Pivô Mediana de Três): Desvio Padrão = 345.38
-QuickSort (Pivô Mediana de Três): Total = 9644999
+QuickSort (Pivô Mediana de Três): Média = 9645.40, 
+QuickSort (Pivô Mediana de Três): Desvio Padrão = 338.13
+QuickSort (Pivô Mediana de Três): Total = 9645399
 ____________________________________________________________________________
 
-ShellSort (Sequência de Knuth): Média = 14181.77
-ShellSort (Sequência de Knuth): Desvio Padrão = 459.67
-ShellSort (Sequência de Knuth): Total = 14181768
+ShellSort (Sequência de Knuth): Média = 14185.45
+ShellSort (Sequência de Knuth): Desvio Padrão = 471.11
+ShellSort (Sequência de Knuth): Total = 14185449
 ____________________________________________________________________________
 
-ShellSort (Sequência de Hibbard): Média = 14945.10
-ShellSort (Sequência de Hibbard): Desvio Padrão = 381.28
-ShellSort (Sequência de Hibbard): Total = 14945097
+ShellSort (Sequência de Hibbard): Média = 14955.01
+ShellSort (Sequência de Hibbard): Desvio Padrão = 372.44
+ShellSort (Sequência de Hibbard): Total = 14955010
 ____________________________________________________________________________
 
 SelectionSort: Média = 523776.00
@@ -627,70 +625,70 @@ SelectionSort: Desvio Padrão = 0.00
 SelectionSort: Total = 523776000
 ____________________________________________________________________________
 
-Busca Sequencial: Média = 822.29
-Busca Sequencial: Desvio Padrão = 313.37
-Busca Sequencial: Total = 822287
+Busca Sequencial: Média = 800.94
+Busca Sequencial: Desvio Padrão = 328.76
+Busca Sequencial: Total = 800939
+____________________________________________________________________________
+
+Busca Binária: Média = 9.54
+Busca Binária: Desvio Padrão = 1.07
+Busca Binária: Total = 9541
+____________________________________________________________________________
+
+0. Sair
+1. Gerar Vetor
+2. QuickSort - Pivô Aleatório
+3. QuickSort - Pivô Mediana de Três
+4. ShellSort - Sequência de Knuth
+5. ShellSort - Sequência de Hibbard
+6. SelectionSort - Quadrático
+7. Busca Sequencial
+8. Busca Binária
+9. Executar todos os algoritmos 1000 vezes
+
+Digite a opção desejada: 9
+
+Executando TODOS os algoritmos 1000 vezes...
+Resultados das Comparações após 1000 execuções:
+
+QuickSort (Pivô Aleatório): Média = 11333.12
+QuickSort (Pivô Aleatório): Desvio Padrão = 648.68
+QuickSort (Pivô Aleatório): Total = 11333124
+____________________________________________________________________________
+
+QuickSort (Pivô Mediana de Três): Média = 9652.59, 
+QuickSort (Pivô Mediana de Três): Desvio Padrão = 349.89
+QuickSort (Pivô Mediana de Três): Total = 9652587
+____________________________________________________________________________
+
+ShellSort (Sequência de Knuth): Média = 14218.02
+ShellSort (Sequência de Knuth): Desvio Padrão = 478.17
+ShellSort (Sequência de Knuth): Total = 14218024
+____________________________________________________________________________
+
+ShellSort (Sequência de Hibbard): Média = 14953.79
+ShellSort (Sequência de Hibbard): Desvio Padrão = 402.77
+ShellSort (Sequência de Hibbard): Total = 14953793
+____________________________________________________________________________
+
+SelectionSort: Média = 523776.00
+SelectionSort: Desvio Padrão = 0.00
+SelectionSort: Total = 523776000
+____________________________________________________________________________
+
+Busca Sequencial: Média = 798.02
+Busca Sequencial: Desvio Padrão = 331.79
+Busca Sequencial: Total = 798025
 ____________________________________________________________________________
 
 Busca Binária: Média = 9.49
-Busca Binária: Desvio Padrão = 1.13
-Busca Binária: Total = 9495
+Busca Binária: Desvio Padrão = 1.09
+Busca Binária: Total = 9488
 ____________________________________________________________________________
 
 0. Sair
 1. Gerar Vetor
-2. QuickSort - Pivô Último
-3. QuickSort - Pivô Mediana de Três
-4. ShellSort - Sequência de Knuth
-5. ShellSort - Sequência de Hibbard
-6. SelectionSort - Quadrático
-7. Busca Sequencial
-8. Busca Binária
-9. Executar todos os algoritmos 1000 vezes
-
-Digite a opção desejada: 9
-
-Executando TODOS os algoritmos 1000 vezes...
-Resultados das Comparações após 1000 execuções:
-
-QuickSort (Pivô Último): Média = 11313.62
-QuickSort (Pivô Último): Desvio Padrão = 672.62
-QuickSort (Pivô Último): Total = 11313625
-____________________________________________________________________________
-
-QuickSort (Pivô Mediana de Três): Média = 9648.94, 
-QuickSort (Pivô Mediana de Três): Desvio Padrão = 363.33
-QuickSort (Pivô Mediana de Três): Total = 9648937
-____________________________________________________________________________
-
-ShellSort (Sequência de Knuth): Média = 14202.78
-ShellSort (Sequência de Knuth): Desvio Padrão = 457.45
-ShellSort (Sequência de Knuth): Total = 14202785
-____________________________________________________________________________
-
-ShellSort (Sequência de Hibbard): Média = 14937.35
-ShellSort (Sequência de Hibbard): Desvio Padrão = 377.95
-ShellSort (Sequência de Hibbard): Total = 14937348
-____________________________________________________________________________
-
-SelectionSort: Média = 523776.00
-SelectionSort: Desvio Padrão = 0.00
-SelectionSort: Total = 523776000
-____________________________________________________________________________
-
-Busca Sequencial: Média = 789.35
-Busca Sequencial: Desvio Padrão = 334.52
-Busca Sequencial: Total = 789351
-____________________________________________________________________________
-
-Busca Binária: Média = 9.52
-Busca Binária: Desvio Padrão = 1.22
-Busca Binária: Total = 9515
-____________________________________________________________________________
-
-0. Sair
-1. Gerar Vetor
-2. QuickSort - Pivô Último
+2. QuickSort - Pivô Aleatório
 3. QuickSort - Pivô Mediana de Três
 4. ShellSort - Sequência de Knuth
 5. ShellSort - Sequência de Hibbard

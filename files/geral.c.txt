@@ -39,7 +39,7 @@ int menu()
     printf("\n");
     printf("0. Sair\n");
     printf("1. Gerar Vetor\n");
-    printf("2. QuickSort - Pivô Último\n");
+    printf("2. QuickSort - Pivô Aleatório\n");
     printf("3. QuickSort - Pivô Mediana de Três\n");
     printf("4. ShellSort - Sequência de Knuth\n");
     printf("5. ShellSort - Sequência de Hibbard\n");
@@ -112,9 +112,9 @@ void program(int opcao)
                 geraVetor(v);
 
             printf("\n");
-            printf("Executando QuickSort com Pivô Último...\n");
-            quickSortUltimo(v, 0, TAM - 1);
-            exibirContagens("QuickSort - Pivô Último");
+            printf("Executando QuickSort com Pivô Aleatório...\n");
+            quickSortAleatorio(v, 0, TAM - 1);
+            exibirContagens("QuickSort - Pivô Aleatório");
 
             printf("\n");
             printf("Deseja imprimir o vetor ordenado? (1. Sim / 2. Não):\n");
@@ -388,7 +388,7 @@ void program(int opcao)
         case 9: 
         {
             const int numExecucoes = 1000;
-            int comparacoesQuickSortUltimo[numExecucoes];
+            int comparacoesQuickSortAleatorio[numExecucoes];
             int comparacoesQuickSortMediana[numExecucoes];
             int comparacoesShellSortKnuth[numExecucoes];
             int comparacoesShellSortHibbard[numExecucoes];
@@ -405,11 +405,11 @@ void program(int opcao)
                 int v[TAM];
                 int v1[TAM];
 
-                // QuickSort com Pivô Último
+                // QuickSort com Pivô Aleatório
                 geraVetor(v);
                 contagemComparacoes = 0;
-                quickSortUltimo(v, 0, TAM - 1);
-                comparacoesQuickSortUltimo[i] = contagemComparacoes;
+                quickSortAleatorio(v, 0, TAM - 1);
+                comparacoesQuickSortAleatorio[i] = contagemComparacoes;
 
                 // QuickSort com Pivô Mediana de Três
                 geraVetor(v);
@@ -448,9 +448,9 @@ void program(int opcao)
             }
 
             // Cálculo da média, desvio padrão e total de comparações para cada algoritmo
-            double mediaQuickUltimo = calcularMedia(comparacoesQuickSortUltimo, numExecucoes);
-            double desvioQuickUltimo = calcularDesvioPadrao(comparacoesQuickSortUltimo, numExecucoes, mediaQuickUltimo);
-            int totalQuickUltimo = calcularTotalComparacoes(comparacoesQuickSortUltimo, numExecucoes);
+            double mediaQuickAleatorio = calcularMedia(comparacoesQuickSortAleatorio, numExecucoes);
+            double desvioQuickAleatorio = calcularDesvioPadrao(comparacoesQuickSortAleatorio, numExecucoes, mediaQuickAleatorio);
+            int totalQuickAleatorio = calcularTotalComparacoes(comparacoesQuickSortAleatorio, numExecucoes);
 
             double mediaQuickMediana = calcularMedia(comparacoesQuickSortMediana, numExecucoes);
             double desvioQuickMediana = calcularDesvioPadrao(comparacoesQuickSortMediana, numExecucoes, mediaQuickMediana);
@@ -482,9 +482,9 @@ void program(int opcao)
             printf("Resultados das Comparações após 1000 execuções:\n");
 
             printf("\n");
-            printf("QuickSort (Pivô Último): Média = %.2f\n", mediaQuickUltimo);
-            printf("QuickSort (Pivô Último): Desvio Padrão = %.2f\n", desvioQuickUltimo);
-            printf("QuickSort (Pivô Último): Total = %d\n", totalQuickUltimo);
+            printf("QuickSort (Pivô Aleatório): Média = %.2f\n", mediaQuickAleatorio);
+            printf("QuickSort (Pivô Aleatório): Desvio Padrão = %.2f\n", desvioQuickAleatorio);
+            printf("QuickSort (Pivô Aleatório): Total = %d\n", totalQuickAleatorio);
             printf("____________________________________________________________________________\n");
 
 

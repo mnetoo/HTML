@@ -1,6 +1,17 @@
+                                    ||||   |||||  |   |      |     |  |||  |    |  ||||   |||  |
+                                    |   |  |      || ||      |     |   |   ||   |  |   | |   | |
+                                    |   |  |      | | |       |   |    |   | |  |  |   | |   | |
+                                    ||||   ||||   |   |       |   |    |   | |  |  |   | |   | |
+                                    |   |  |      |   |        | |     |   |  | |  |   | |   | |
+                                    |   |  |      |   |        | |     |   |  | |  |   | |   | |
+                                    ||||   |||||  |   |         |     |||  |   ||  ||||   |||  .
 
-                                    Bem-vindo ao Trabalho Prático da disciplina de Algoritmos II!
-                                    Aqui você verá a implementação de algoritmos de ordenação e busca.
+                                Trabalho Prático (Ordenação e Pesquisa) - Disciplina de Algoritmos II
+                                             Prof. Dr. Elias Procópio Duarte Jínior!
+
+                                        Implementação de algoritmos de ordenação e busca.
+
+
 
 Selecione a operação desejada:
 
@@ -549,24 +560,24 @@ Digite a opção desejada: 9
 Executando TODOS os algoritmos 1000 vezes...
 Resultados das Comparações após 1000 execuções:
 
-QuickSort (Pivô Aleatório): Média = 11297.15
-QuickSort (Pivô Aleatório): Desvio Padrão = 681.18
-QuickSort (Pivô Aleatório): Total = 11297148
+QuickSort (Pivô Aleatório): Média = 11283.92
+QuickSort (Pivô Aleatório): Desvio Padrão = 641.44
+QuickSort (Pivô Aleatório): Total = 11283916
 ____________________________________________________________________________
 
-QuickSort (Pivô Mediana de Três): Média = 9653.67, 
-QuickSort (Pivô Mediana de Três): Desvio Padrão = 339.55
-QuickSort (Pivô Mediana de Três): Total = 9653675
+QuickSort (Pivô Mediana de Três): Média = 9636.59, 
+QuickSort (Pivô Mediana de Três): Desvio Padrão = 345.10
+QuickSort (Pivô Mediana de Três): Total = 9636590
 ____________________________________________________________________________
 
-ShellSort (Sequência de Knuth): Média = 14217.78
-ShellSort (Sequência de Knuth): Desvio Padrão = 481.05
-ShellSort (Sequência de Knuth): Total = 14217782
+ShellSort (Sequência de Knuth): Média = 14219.50
+ShellSort (Sequência de Knuth): Desvio Padrão = 456.05
+ShellSort (Sequência de Knuth): Total = 14219495
 ____________________________________________________________________________
 
-ShellSort (Sequência de Hibbard): Média = 14966.87
-ShellSort (Sequência de Hibbard): Desvio Padrão = 382.06
-ShellSort (Sequência de Hibbard): Total = 14966874
+ShellSort (Sequência de Hibbard): Média = 14959.52
+ShellSort (Sequência de Hibbard): Desvio Padrão = 386.36
+ShellSort (Sequência de Hibbard): Total = 14959521
 ____________________________________________________________________________
 
 SelectionSort: Média = 523776.00
@@ -574,14 +585,66 @@ SelectionSort: Desvio Padrão = 0.00
 SelectionSort: Total = 523776000
 ____________________________________________________________________________
 
-Busca Sequencial: Média = 821.37
-Busca Sequencial: Desvio Padrão = 319.26
-Busca Sequencial: Total = 821367
+Busca Sequencial: Média = 806.12
+Busca Sequencial: Desvio Padrão = 325.53
+Busca Sequencial: Total = 806124
 ____________________________________________________________________________
 
-Busca Binária: Média = 9.54
+Busca Binária: Média = 9.53
 Busca Binária: Desvio Padrão = 1.05
-Busca Binária: Total = 9538
+Busca Binária: Total = 9531
+____________________________________________________________________________
+
+
+0. Sair
+1. Gerar Vetor
+2. QuickSort - Pivô Aleatório
+3. QuickSort - Pivô Mediana de Três
+4. ShellSort - Sequência de Knuth
+5. ShellSort - Sequência de Hibbard
+6. SelectionSort - Quadrático
+7. Busca Sequencial
+8. Busca Binária
+9. Executar todos os algoritmos 1000 vezes
+
+Digite a opção desejada: 9
+
+Executando TODOS os algoritmos 1000 vezes...
+Resultados das Comparações após 1000 execuções:
+
+QuickSort (Pivô Aleatório): Média = 11292.92
+QuickSort (Pivô Aleatório): Desvio Padrão = 648.01
+QuickSort (Pivô Aleatório): Total = 11292924
+____________________________________________________________________________
+
+QuickSort (Pivô Mediana de Três): Média = 9641.81, 
+QuickSort (Pivô Mediana de Três): Desvio Padrão = 326.98
+QuickSort (Pivô Mediana de Três): Total = 9641811
+____________________________________________________________________________
+
+ShellSort (Sequência de Knuth): Média = 14222.83
+ShellSort (Sequência de Knuth): Desvio Padrão = 461.07
+ShellSort (Sequência de Knuth): Total = 14222825
+____________________________________________________________________________
+
+ShellSort (Sequência de Hibbard): Média = 14949.70
+ShellSort (Sequência de Hibbard): Desvio Padrão = 387.62
+ShellSort (Sequência de Hibbard): Total = 14949702
+____________________________________________________________________________
+
+SelectionSort: Média = 523776.00
+SelectionSort: Desvio Padrão = 0.00
+SelectionSort: Total = 523776000
+____________________________________________________________________________
+
+Busca Sequencial: Média = 797.37
+Busca Sequencial: Desvio Padrão = 325.97
+Busca Sequencial: Total = 797368
+____________________________________________________________________________
+
+Busca Binária: Média = 9.55
+Busca Binária: Desvio Padrão = 1.02
+Busca Binária: Total = 9548
 ____________________________________________________________________________
 
 0. Sair
@@ -600,75 +663,24 @@ Digite a opção desejada: 9
 Executando TODOS os algoritmos 1000 vezes...
 Resultados das Comparações após 1000 execuções:
 
-QuickSort (Pivô Aleatório): Média = 11315.65
-QuickSort (Pivô Aleatório): Desvio Padrão = 661.20
-QuickSort (Pivô Aleatório): Total = 11315653
+QuickSort (Pivô Aleatório): Média = 11298.32
+QuickSort (Pivô Aleatório): Desvio Padrão = 641.53
+QuickSort (Pivô Aleatório): Total = 11298316
 ____________________________________________________________________________
 
-QuickSort (Pivô Mediana de Três): Média = 9645.40, 
-QuickSort (Pivô Mediana de Três): Desvio Padrão = 338.13
-QuickSort (Pivô Mediana de Três): Total = 9645399
+QuickSort (Pivô Mediana de Três): Média = 9648.70, 
+QuickSort (Pivô Mediana de Três): Desvio Padrão = 348.40
+QuickSort (Pivô Mediana de Três): Total = 9648696
 ____________________________________________________________________________
 
-ShellSort (Sequência de Knuth): Média = 14185.45
-ShellSort (Sequência de Knuth): Desvio Padrão = 471.11
-ShellSort (Sequência de Knuth): Total = 14185449
+ShellSort (Sequência de Knuth): Média = 14187.15
+ShellSort (Sequência de Knuth): Desvio Padrão = 470.55
+ShellSort (Sequência de Knuth): Total = 14187148
 ____________________________________________________________________________
 
-ShellSort (Sequência de Hibbard): Média = 14955.01
-ShellSort (Sequência de Hibbard): Desvio Padrão = 372.44
-ShellSort (Sequência de Hibbard): Total = 14955010
-____________________________________________________________________________
-
-SelectionSort: Média = 523776.00
-SelectionSort: Desvio Padrão = 0.00
-SelectionSort: Total = 523776000
-____________________________________________________________________________
-
-Busca Sequencial: Média = 800.94
-Busca Sequencial: Desvio Padrão = 328.76
-Busca Sequencial: Total = 800939
-____________________________________________________________________________
-
-Busca Binária: Média = 9.54
-Busca Binária: Desvio Padrão = 1.07
-Busca Binária: Total = 9541
-____________________________________________________________________________
-
-0. Sair
-1. Gerar Vetor
-2. QuickSort - Pivô Aleatório
-3. QuickSort - Pivô Mediana de Três
-4. ShellSort - Sequência de Knuth
-5. ShellSort - Sequência de Hibbard
-6. SelectionSort - Quadrático
-7. Busca Sequencial
-8. Busca Binária
-9. Executar todos os algoritmos 1000 vezes
-
-Digite a opção desejada: 9
-
-Executando TODOS os algoritmos 1000 vezes...
-Resultados das Comparações após 1000 execuções:
-
-QuickSort (Pivô Aleatório): Média = 11333.12
-QuickSort (Pivô Aleatório): Desvio Padrão = 648.68
-QuickSort (Pivô Aleatório): Total = 11333124
-____________________________________________________________________________
-
-QuickSort (Pivô Mediana de Três): Média = 9652.59, 
-QuickSort (Pivô Mediana de Três): Desvio Padrão = 349.89
-QuickSort (Pivô Mediana de Três): Total = 9652587
-____________________________________________________________________________
-
-ShellSort (Sequência de Knuth): Média = 14218.02
-ShellSort (Sequência de Knuth): Desvio Padrão = 478.17
-ShellSort (Sequência de Knuth): Total = 14218024
-____________________________________________________________________________
-
-ShellSort (Sequência de Hibbard): Média = 14953.79
-ShellSort (Sequência de Hibbard): Desvio Padrão = 402.77
-ShellSort (Sequência de Hibbard): Total = 14953793
+ShellSort (Sequência de Hibbard): Média = 14950.22
+ShellSort (Sequência de Hibbard): Desvio Padrão = 376.79
+ShellSort (Sequência de Hibbard): Total = 14950220
 ____________________________________________________________________________
 
 SelectionSort: Média = 523776.00
@@ -676,14 +688,14 @@ SelectionSort: Desvio Padrão = 0.00
 SelectionSort: Total = 523776000
 ____________________________________________________________________________
 
-Busca Sequencial: Média = 798.02
-Busca Sequencial: Desvio Padrão = 331.79
-Busca Sequencial: Total = 798025
+Busca Sequencial: Média = 811.33
+Busca Sequencial: Desvio Padrão = 326.72
+Busca Sequencial: Total = 811327
 ____________________________________________________________________________
 
 Busca Binária: Média = 9.49
-Busca Binária: Desvio Padrão = 1.09
-Busca Binária: Total = 9488
+Busca Binária: Desvio Padrão = 1.14
+Busca Binária: Total = 9486
 ____________________________________________________________________________
 
 0. Sair

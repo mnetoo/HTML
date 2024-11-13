@@ -1,6 +1,7 @@
 /*
 
---------    PROTOTIPAÇÃO DAS FUNÇÕES DE ORDENAÇÃO E BUSCA    --------
+--------    IMPLEMENTAÇÃO DAS FUNÇÕES DE ORDENAÇÃO E BUSCA    --------
+--------    ALUNO: MARCUS SEBASTIÃO ADRIANO ROCHA NETO GRR: 20240710    --------
 --------    Algoritmos de Ordenação: QuickSort, ShellSort, SelectionSort    --------
 --------    Algoritmos de Busca: Sequencial, Binária    --------
 --------    TRABALHO PRÁTICO - PROF. DR .ELIAS     --------

@@ -157,15 +157,79 @@ button a {
 .circle {
     width: 150px;          
     height: 175px;  
-    border-radius: 20px;       
+    border-radius: 100%;       
     overflow: hidden;      
-    display: flex;
     align-items: center;   
     justify-content: center;
 }
 
-.circle img {
-    width: 100%;         
-    height: 100%;     
-    padding: 10px;
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 10px !important;
+    }
+
+    main {
+        row-gap: 2vh !important;
+        padding-top: 2vh !important;
+        padding-bottom: 2vh !important;
+    }
+
+    h5 {
+        font-size: 12px !important;
+    }
+
+    ul, li {
+        font-size: 10px !important;
+    }
+
+    img {
+        width: 75px !important;          
+        height: 90px !important;
+    }
+
+    button {
+        font-size: 8px !important;
+    }
+
+    main p {
+        margin: 0 !important;
+        vertical-align: middle !important;
+        line-height: 1rem !important;
+    }
+}
+/* Regras para iPad/Tablet (largura mínima de 768px e largura máxima de 1200px)*/
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    body {
+        font-size: 10px !important;
+    }
+
+    main {
+        row-gap: 2vh !important;
+        padding-top: 2vh !important;
+        padding-bottom: 2vh !important;
+    }
+
+    h5 {
+        font-size: 12px !important;
+    }
+
+    ul, li {
+        font-size: 10px !important;
+    }
+
+    img {
+        width: 75px !important;          
+        height: 90px !important;
+    }
+
+    button {
+        font-size: 8px !important;
+    }
+
+    main p {
+        margin: 0 !important;
+        vertical-align: middle !important;
+        line-height: 1rem !important;
+    }
 }

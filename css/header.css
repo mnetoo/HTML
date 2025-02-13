@@ -1,12 +1,30 @@
 /* header.css */
 
 header {
-    display: grid;
-    grid-template-columns: 0.2fr 10.7fr;
     column-gap: 10px;
-    padding: 4vh 6rem;
+    padding: 6vh 6rem;
     align-items: center;
     text-align: center;
+}
+
+.caixaHeader {
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(14, 13, 49);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.caixaHeader a {
+    text-decoration: none;
+    color: rgb(173, 173, 173);
+}
+
+.caixaHeader a:hover {
+    text-decoration: none;
+    color: rgb(112, 50, 228)
 }
 
 header p{

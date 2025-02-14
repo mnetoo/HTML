@@ -19,6 +19,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 
@@ -28,11 +29,13 @@ h5 {
 
 main {
     display: grid;
-    grid-template-columns: 0.7fr 6fr 0.7fr;
+    grid-template-columns: 0.7fr 4fr 0.7fr 2fr;
     text-align: left;
     row-gap: 2vh;
     padding-top: 4vh;
     padding-bottom: 5vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .box {
@@ -45,6 +48,28 @@ main {
     font-family: 'Montserrat', sans-serif; 
     font-weight: 800;
 
+}
+
+.Curriculo {
+    grid-column-start: 4;
+    border-radius: 15px;
+    background-color:  rgb(14, 13, 49);
+    width: 270px;
+    height: 75px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    display: flex;
+}
+
+.Curriculo a {
+    text-decoration: none;
+    color: white;
+}
+
+.Curriculo p  {
+    margin: 0;
 }
 
 .atuais {

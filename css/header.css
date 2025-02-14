@@ -19,7 +19,7 @@ header {
 
 .caixaHeader a {
     text-decoration: none;
-    color: rgb(173, 173, 173);
+    color: white;
 }
 
 .caixaHeader a:hover {
